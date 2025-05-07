@@ -1,0 +1,314 @@
+MOTOR_1 inserted.<br>
+
+MOTOR_2 inserted.<br>
+
+MOTOR_3 inserted.<br>
+
+MOTOR_4 inserted.<br>
+
+MOTOR_5 inserted.<br>
+
+MOTOR_6 inserted.<br>
+
+MOTOR_1 inserted.<br>
+
+MOTOR_2 inserted.<br>
+
+MOTOR_3 inserted.<br>
+
+MOTOR_4 inserted.<br>
+
+MOTOR_5 inserted.<br>
+
+MOTOR_6 inserted.<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:22:34')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:22:34')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:22:34')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:22:34')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:22:34')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:22:34')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:28:17')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:28:17')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:28:17')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:28:17')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:28:17')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 11:28:17')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:26')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:26')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:26')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:26')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:26')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:26')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:27')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:28')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:29')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_1', '1', '123', '0', '0', '230', '0', '45', '120', '0', '1500', '121', '123', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_2', '2', '130', '1', '0', '235', '0', '50', '125', '0', '1550', '125', '130', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_3', '0', '118', '0', '1', '228', '1', '40', '115', '1', '1450', '118', '119', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_4', '1', '125', '1', '1', '232', '0', '48', '122', '0', '1520', '124', '126', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_5', '2', '127', '0', '0', '231', '1', '46', '119', '1', '1490', '126', '127', '0', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
+INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10, date_time, server_date_time) VALUES ('MOTOR_6', '1', '122', '1', '0', '229', '0', '44', '117', '0', '1480', '121', '122', '1', '0', '0', '0', '1', '1', '0', '2025-04-28 13:05:20', '2025-05-02 17:20:30')
+
