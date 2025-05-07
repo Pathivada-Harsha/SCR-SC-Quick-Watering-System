@@ -1,4 +1,10 @@
+setInterval(refresh_data, 60000);
+function refresh_data() {
+    const activeMotorTab = $('.tab-content.active').attr('id');
+    const motorNumber = activeMotorTab.replace('motor_', '');
+    fetchAndUpdateMotorDetails(activeMotorTab, motorNumber);
 
+}
 
 const motorConfig = {
     count: 6, // Total number of motors
@@ -254,6 +260,7 @@ function updateElectricalDetails(motorNumber, details) {
 // Function to fetch motor details and update the electrical details
 function fetchAndUpdateMotorDetails(motor_id, motor_number) {
     const userRole = document.getElementById('user-role').value;
+    // document.getElementById('pre-loader').style.display = 'block';
 
     // Fetch latest data for the selected motor from database
     $.ajax({
@@ -265,6 +272,8 @@ function fetchAndUpdateMotorDetails(motor_id, motor_number) {
         },
         dataType: 'json',
         success: function (data) {
+            // $("#pre-loader").css('display', 'none');
+
             updateElectricalDetails(motor_number, data);
         },
         error: function (xhr, status, error) {
@@ -669,7 +678,7 @@ function mqttReconnect() {
                         showDisconnectedStatus();
                         console.warn("MQTT disconnected. Waiting for manual reconnect...");
                     }
-                }, 30000); 
+                }, 30000);
                 isVfdMqttIntervalSet = true;
             }
         },
