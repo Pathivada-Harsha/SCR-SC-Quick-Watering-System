@@ -225,7 +225,7 @@ function updateElectricalDetails(motorNumber, details) {
                 'frequency': details.frequency,
                 'speed': details.speed,
                 'hours': details.runningHours,
-                'motor_voltage': details.motor_voltage,
+                'motor_voltage': details.motorVoltage,
                 'ref_frequency': details.referencefrequency,
             };
 
