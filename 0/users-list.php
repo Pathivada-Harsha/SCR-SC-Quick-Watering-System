@@ -12,7 +12,80 @@ $user_login_id = $sessionVars['user_login_id'];
 <html lang="en" data-bs-theme="auto">
 <head>
   <title>Add New User</title>  
+  <style>
+        /* CSS for fixed headers and properly positioned dropdowns */
+
+        /* Make header sticky and fixed */
+        .table-sticky-header thead {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            /* background-color: #f8f9fa; */
+            /* Match your table header background color */
+        }
+
+        /* Fix for table header alignment */
+        .table-sticky-header th {
+            min-width: max-content;
+            /* Ensure headers don't shrink */
+            position: relative;
+        }
+
+        /* Ensure the table header and data cells are properly aligned */
+        .table-sticky-header th,
+        .table-sticky-header td {
+            white-space: nowrap;
+            /* Prevent text wrapping */
+            padding: 0.5rem;
+            /* Consistent padding */
+        }
+
   
+
+        /* Style for dropdown menus */
+        .dropdown-menu-user-list {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: auto;
+            z-index: 1000;
+            float: left;
+            min-width: 10rem;
+            padding: 0.5rem 0;
+            margin: 0.125rem 0 0;
+            font-size: 1rem;
+            color: #212529;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 0.25rem;
+        }
+
+        /* Dropdown positioning */
+        .btn-group.dropend {
+            position: relative;
+        }
+
+        /* Ensure dropdown menu stays inside table */
+        .table-responsive {
+            overflow-x: auto;
+            position: relative;
+        }
+
+        /* Set a shade for action column when scrolling */
+      
+
+        /* Make dropdown open to the left rather than right */
+        .dropend .dropdown-menu {
+            top: 0;
+            right: auto;
+            left: auto;
+            margin-top: 0.125rem;
+            margin-left: 0.125rem;
+        }
+    </style>
   <?php
   include(BASE_PATH."assets/html/start-page.php");
   ?>
