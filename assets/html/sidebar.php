@@ -182,7 +182,7 @@
 					User Activity
 				</a>
 			</li>
-		<?php endif; ?>
+		<?php endif; ?> -->
 
 		<?php if (hasPermission('download', $menu_list)): ?>
 			<li>
@@ -192,7 +192,7 @@
 				</a>
 			</li>
 		<?php endif; ?>
-
+<!-- 
 		<?php if (hasPermission('complaints', $menu_list)): ?>
 			<li>
 				<a href="complaints.php" class="nav-link link-body-emphasis">
@@ -216,6 +216,7 @@
 						<li><a href="software-update.php" class="nav-link link-body-emphasis d-inline-flex text-decoration-none rounded"><i class="bi bi-arrow-return-right"></i>Software Updates</a></li>
 						<!-- <li><a href="add-new-client-details.php" class="nav-link link-body-emphasis d-inline-flex text-decoration-none rounded"><i class="bi bi-arrow-return-right"></i>Add New Client Details</a></li> -->
 						<!-- <li><a href="data-backup.php" class="nav-link link-body-emphasis d-inline-flex text-decoration-none rounded"><i class="bi bi-arrow-return-right"></i>Data Back-Up</a></li> -->
+						<li><a href="crc-failed-table.php" class="nav-link link-body-emphasis d-inline-flex text-decoration-none rounded"><i class="bi bi-arrow-return-right"></i>CRC Failed Records</a></li>
 
 					</ul>
 				</div>

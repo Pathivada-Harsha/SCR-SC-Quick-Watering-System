@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'reconnectPeriod' => 1000, 
         'connectTimeout' => 4000,   
         'clean' => true,
-        'brokerUrl' => 'ws://95.111.238.141:8083/mqtt',
+        'brokerUrl' => 'wss://mqtt-broker.istlabsonline.com/mqtt',
         'mainTopic' => 'PUB/SCRSC/VFD_STATUS',
         'requestTopic' => 'test/request_response'
     ];
