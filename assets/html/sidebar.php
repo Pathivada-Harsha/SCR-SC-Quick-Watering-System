@@ -61,14 +61,14 @@
 			</li>
 		<?php endif; ?>
 
-		<!-- <?php if (hasPermission('data_report', $menu_list)): ?>
+		<?php if (hasPermission('motor_performance_monitor', $menu_list)): ?>
 			<li>
 				<a href="motor-performance-monitor.php" class="nav-link link-body-emphasis">
 				<i class="bi bi-speedometer2"></i>
 					Motor Performance Monitor
 				</a>
 			</li>
-			<?php endif; ?> -->
+			<?php endif; ?>
 			
 		<?php if (hasPermission('alerts', $menu_list)): ?>
 			<li>
