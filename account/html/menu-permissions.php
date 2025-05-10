@@ -37,6 +37,7 @@
 														'onoff_control' => 'ON/OFF Control',
 														'gis_map' => 'GIS Map',
 														'data_report' => 'Data Report',
+														'motor_performance_monitor' => 'Motor Performance Monitor',
 														'energy_consumption' => 'Energy Consumption',
 														'thresholdsettings' => 'Threshold Settings',
 														'group_creation' => 'Group Creation',
