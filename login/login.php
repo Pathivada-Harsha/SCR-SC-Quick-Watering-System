@@ -186,6 +186,7 @@ function fetch_menu_permissions($login_id, $conn)
 				'onoff_control' => 'ON/OFF Control',
 				'gis_map' => 'GIS Map',
 				'data_report' => 'Data Report',
+				'motor_performance_monitor' => 'Motor performance Monitor',
 				'energy_consumption' => 'Energy Consumption',
 				'thresholdsettings' => 'Threshold Settings',
 				'group_creation' => 'Group Creation',
