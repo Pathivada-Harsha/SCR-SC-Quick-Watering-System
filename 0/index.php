@@ -855,9 +855,19 @@ $user_email = $sessionVars['user_email'];
     }
 
     /* Custom hover effects for each metric type */
-    .metric-row.voltage:hover {
+    .metric-row.r_y_voltage:hover {
+      background-color: rgba(239, 68, 68, 0.1);
+      border-left: 4px solid #ef4444;
+    }
+
+    .metric-row.y_b_voltage:hover {
       background-color: rgba(245, 158, 11, 0.1);
       border-left: 4px solid #f59e0b;
+    }
+
+    .metric-row.b_r_voltage:hover {
+      background-color: rgba(59, 130, 246, 0.1);
+      border-left: 4px solid #3b82f6;
     }
 
     .metric-row.current:hover {
@@ -921,8 +931,18 @@ $user_email = $sessionVars['user_email'];
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
 
-    .icon-voltage {
+    .icon-r_y_voltage {
+      background-color: #ef4444;
+      /* animation: pulse 2s infinite; */
+    }
+
+    .icon-y_b_voltage {
       background-color: #f59e0b;
+      /* animation: pulse 2s infinite; */
+    }
+
+    .icon-b_r_voltage {
+      background-color: #3b82f6;
       /* animation: pulse 2s infinite; */
     }
 
@@ -1064,7 +1084,7 @@ $user_email = $sessionVars['user_email'];
                 <div class="card-body p-0 ">
                   <div class="center-content blue-light-bg ">
                     <span id="inlet-pressure-status" class="m-4 badge-outline-success fw-bold">
-                     
+
                       <span class="pulse-dot"></span>
                     </span>
                   </div>

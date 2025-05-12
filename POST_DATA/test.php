@@ -3,7 +3,7 @@
 $ip_address = $_SERVER['REMOTE_ADDR'];
 $frame_data = "";
 $payload = "";
-GLOBAl $crc_status;
+global $crc_status;
 if ($ip_address == "::1") {
     define('HOST', 'localhost');
     define('USERNAME', 'root');
@@ -11,9 +11,9 @@ if ($ip_address == "::1") {
 
     define('DB_USER', 'scr_user_db');
     define('DB_ALL', 'scr_secundrabad');
-    $frame_data = "0;0.00;0.00;0;422.5;0.0;0.0;0.00;50.00;0;254.00;1678;51;0;0.00;0.00;0;425.6;0.0;0.0;0.00;50.00;0;308.00;2384;51;0;0.00;0.00;0;418.4;0.0;0.0;0.00;50.00;0;771.00;6;51;0;0.00;0.00;0;0.0;0.0;0.0;0.00;0.00;0;0.00;0;0;0;0.00;0.00;0;0.0;0.0;0.0;0.00;0.00;0;0.00;0;0;0;0.00;0.00;0;425.9;0.0;0.0;0.00;50.00;0;791.00;1373;51;0;0;0;0;0;0;1.13;1.12;0.01;2025-05-08 15:20:18;37140";
-    $crc_status ='true';
-    $payload = "1;1.00;0.00;0;422.5;0.0;0.0;0.00;50.00;0;2504.00;1689;51;0;0.00;0.00;0;425.6;0.0;0.0;0.00;50.00;0;312.00;2384;51;0;0.00;0.00;0;418.4;0.0;0.0;0.00;50.00;0;871.00;60;51;0;0.00;0.00;0;0.0;0.0;0.0;0.00;0.00;0;0.00;0;0;0;0.00;0.00;0;0.0;0.0;0.0;0.00;0.00;0;0.00;0;0;0;0.00;0.00;0;425.9;0.0;0.0;0.00;50.00;0;791.00;1373;51;0;0;0;0;0;0;1.13;1.12;0.01;2025-05-11 15:23:18";
+    $frame_data = "0;0.00;0.00;0;422.5;101;123;0.0;0.0;0.00;50.00;0;254.00;1678;51;0;0.00;0.00;0;425.6;0.0;0.0;0.00;50.00;0;308.00;2384;51;0;0.00;0.00;0;418.4;0.0;0.0;0.00;50.00;0;771.00;6;51;0;0.00;0.00;0;0.0;0.0;0.0;0.00;0.00;0;0.00;0;0;0;0.00;0.00;0;0.0;0.0;0.0;0.00;0.00;0;0.00;0;0;0;0.00;0.00;0;425.9;0.0;0.0;0.00;50.00;0;791.00;1373;51;0;0;0;0;0;0;1.13;1.12;0.01;2025-05-08 15:20:18;37140";
+    $crc_status = 'true';
+    $payload = "1;1.00;0.00;0;422.5;101;123;34,0.0;0.0;0.00;50.00;0;2504.00;1689;51;0;0.00;0.00;0;425.6;101;123;0.0;0.0;0.00;50.00;0;312.00;2384;51;0;0.00;0.00;0;418.4;101;123;0.0;0.0;0.00;50.00;0;871.00;60;51;0;0.00;0.00;0;321.0;101;123;0.0;0.0;0.00;0.00;0;0.00;0;0;0;0.00;0.00;0;0.0;0.0;0.0;0.0;0.0;0.00;0.00;0;0.00;0;0;0;0.00;0.00;0;425.9;101.23;102;0.0;0.0;0.00;50.00;0;791.00;1373;51;0;0;0;0;0;0;1.13;1.12;0.01;2025-05-11 15:23:18";
 } else {
     define('HOST', '103.101.59.93');
     define('USERNAME', 'istlabsonline_db_user');
@@ -32,7 +32,7 @@ if ($ip_address == "::1") {
     $data_set = $frame_data;
 
     // $data = $data_set['payload'] ?? '';
-        $data = $data_set;
+    $data = $data_set;
 
 
     $crc_string = strrchr($data, ';'); // get the crc word from data
@@ -52,16 +52,15 @@ if ($ip_address == "::1") {
             } else $crc >>= 1;
         }
     }
-    $payload= $data_crc ;
+    $payload = $data_crc;
     $crc_status = ($crc_compare == $crc) ? 'true' : 'false';
-    
 }
 
 
 $central_db = DB_ALL;
 $users_db = DB_USER;
 
-if ($payload != "" && $crc_status === 'true' ) {
+if ($payload != "" && $crc_status === 'true') {
 
     //file_put_contents('log.txt',  $payload ."\n\n", FILE_APPEND);
     $conn = mysqli_connect(HOST, USERNAME, PASSWORD, DB_ALL);
@@ -88,29 +87,31 @@ if ($payload != "" && $crc_status === 'true' ) {
     $outlet_pressure_2 = $pf_values[8];
     $date_time = $pf_values[9];
 
-
     for ($i = 0; $i < 6; $i++) {
-        $base_index = $i * 13;
+        $base_index = $i * 15;
         $motor_id = "MOTOR_" . ($i + 1);
         $on_off_status = $array[$base_index];
         $flow_rate = $array[$base_index + 1];
         $cumulative_flow = $array[$base_index + 2];
         $duration_run_time = $array[$base_index + 3];
-        $line_voltage = $array[$base_index + 4];
-        $motor_voltage = $array[$base_index + 5];
-        $motor_current = $array[$base_index + 6];
-        $frequency = $array[$base_index + 7];
-        $reference_frequency = $array[$base_index + 8];
-        $speed = $array[$base_index + 9];
-        $energy_kwh = $array[$base_index + 10];
-        $total_running_hours = $array[$base_index + 11];
-        $drive_status = $array[$base_index + 12];
-        $motor_query = "INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, line_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10,inlet_pressure,outlet_pressure1,outlet_pressure2,date_time, server_date_time) VALUES ('$motor_id', '$on_off_status', '$flow_rate', '$cumulative_flow', '$duration_run_time', '$line_voltage', '$motor_voltage', '$motor_current', '$frequency', '$reference_frequency', '$speed', '$energy_kwh', '$total_running_hours', '$drive_status', '$pf_1_2', '$pf_3_4', '$pf_5_6', '$pf_7', '$pf_8', '$pf_9_10','$inlet_pressure','$outlet_pressure_1','$outlet_pressure_2','$date_time', '$server_time')";
+        $r_y_voltage = $array[$base_index + 4];
+        $y_b_voltage = $array[$base_index + 5];
+        $b_r_voltage = $array[$base_index + 6];
+        $motor_voltage = $array[$base_index + 7];
+        $motor_current = $array[$base_index + 8];
+        $frequency = $array[$base_index + 9];
+        $reference_frequency = $array[$base_index + 10];
+        $speed = $array[$base_index + 11];
+        $energy_kwh = $array[$base_index + 12];
+        $total_running_hours = $array[$base_index + 13];
+        $drive_status = $array[$base_index + 14];
 
-        //file_put_contents('log.txt',  $motor_query."\n\n", FILE_APPEND);
+        $motor_query = "INSERT INTO motor_data(motor_id, on_off_status, flow_rate, cumulative_flow, duration_run_time, r_y_voltage,y_b_voltage,b_r_voltage, motor_voltage, motor_current, frequency, reference_frequency, speed, energy_kwh, total_running_hours, drive_status, pf_1_2,pf_3_4, pf_5_6, pf_7, pf_8, pf_9_10,inlet_pressure,outlet_pressure1,outlet_pressure2,date_time, server_date_time) VALUES ('$motor_id', '$on_off_status', '$flow_rate', '$cumulative_flow', '$duration_run_time', '$r_y_voltage','$y_b_voltage','$b_r_voltage', '$motor_voltage', '$motor_current', '$frequency', '$reference_frequency', '$speed', '$energy_kwh', '$total_running_hours', '$drive_status', '$pf_1_2', '$pf_3_4', '$pf_5_6', '$pf_7', '$pf_8', '$pf_9_10','$inlet_pressure','$outlet_pressure_1','$outlet_pressure_2','$date_time', '$server_time')";
+
+
         if (mysqli_query($conn, $motor_query)) {
             // file_put_contents('log.txt',  $motor_query."\n\n", FILE_APPEND);
-            echo "updated </br>";
+            echo "updated";
         } else {
             mysqli_error($conn);
             // file_put_contents('log.txt',  mysqli_error($conn)."\n\n", FILE_APPEND);
@@ -119,8 +120,7 @@ if ($payload != "" && $crc_status === 'true' ) {
     }
 
     mysqli_close($conn);
-}
-else{
+} else {
     $conn = mysqli_connect(HOST, USERNAME, PASSWORD, DB_ALL);
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
@@ -141,5 +141,5 @@ else{
     }
 
 
-mysqli_close($conn);
+    mysqli_close($conn);
 }

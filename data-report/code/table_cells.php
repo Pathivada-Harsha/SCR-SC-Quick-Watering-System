@@ -9,7 +9,10 @@
 			<i class="fas fa-power-off me-1"></i><?php echo ($r['on_off_status'] == 1) ? 'ON' : 'OFF'; ?>
 		</span>
 	</td>
-	<td><?php echo number_format((float)$r['line_voltage'], 1); ?></td>
+	<td><?php echo number_format((float)$r['r_y_voltage'], 1); ?></td>
+	<td><?php echo number_format((float)$r['y_b_voltage'], 1); ?></td>
+	<td><?php echo number_format((float)$r['b_r_voltage'], 1); ?></td>
+
 	<td><?php echo number_format((float)$r['motor_voltage'], 1); ?></td>
 
 	<td><?php echo number_format((float)$r['motor_current'], 2); ?></td>

@@ -1,5 +1,7 @@
 setInterval(refresh_data, 60000);
 function refresh_data() {
+    // $("#pre-loader").css('display', 'none');
+    // console.log("pageRfer");
     const activeMotorTab = $('.tab-content.active').attr('id');
     const motorNumber = activeMotorTab.replace('motor_', '');
     fetchAndUpdateMotorDetails(activeMotorTab, motorNumber);
@@ -11,10 +13,24 @@ const motorConfig = {
     metrics: [
         // Left column metrics
         {
-            id: "voltage",
-            icon: "bi-lightning-charge-fill",
-            title: "Line Voltage",
-            valueId: "voltage",
+            id: "r_y_voltage",
+            icon: "bi-lightning-charge",  // Lightning with charge (no fill)
+            title: "Line R_Y Voltage",
+            valueId: "r_y_voltage",
+            unit: "V"
+        },
+        {
+            id: "y_b_voltage",
+            icon: "bi-lightning",  // Regular lightning
+            title: "Line Y_B Voltage",
+            valueId: "y_b_voltage",
+            unit: "V"
+        },
+        {
+            id: "b_r_voltage",
+            icon: "bi-lightning-charge-fill",  // Lightning with charge (filled)
+            title: "Line B_R Voltage",
+            valueId: "b_r_voltage",
             unit: "V"
         },
         {
@@ -31,6 +47,8 @@ const motorConfig = {
             valueId: "motor_voltage",
             unit: "V"
         },
+        // Right column metrics
+
         {
             id: "energy",
             icon: "bi-battery-half",
@@ -39,7 +57,6 @@ const motorConfig = {
             unit: ""
         },
 
-        // Right column metrics
         {
             id: "refFrequency",
             icon: "bi-broadcast-pin",
@@ -128,13 +145,13 @@ function generateMotorTabsAndContent() {
   <div class="grid-2-cols">
     <!-- Left Side -->
     <div id="motor-${i}-left-metrics">
-      ${generateMetrics(i, 0, 4, isSuperAdmin)}
+      ${generateMetrics(i, 0, 5, isSuperAdmin)}
       ${isSuperAdmin ? generateAdminMetric(i) : ''}
     </div>
     
     <!-- Right Side -->
     <div id="motor-${i}-right-metrics">
-      ${generateMetrics(i, 4, 8, isSuperAdmin)}
+      ${generateMetrics(i, 5, 10, isSuperAdmin)}
     </div>
   </div>
 </div>
@@ -163,7 +180,7 @@ function generateMetrics(motorId, startIndex, endIndex, isSuperAdmin) {
   </div>
   <h5 class="section-subtitle">${metric.title}</h5>
 </div>
-<span id="motor-${motorId}-${metric.valueId}" class="small-card-value">0 ${metric.unit}</span>
+<span id="motor-${motorId}-${metric.valueId}" class="small-card-value">-- ${metric.unit}</span>
 </div>
 `;
     }
@@ -183,7 +200,7 @@ function generateAdminMetric(motorId) {
 </div>
 <h5 class="section-subtitle">${metric.title}</h5>
 </div>
-<span id="motor-${motorId}-${metric.valueId}" class="small-card-value">Not Available</span>
+<span id="motor-${motorId}-${metric.valueId}" class="small-card-value">--</span>
 </div>
 `;
 }
@@ -210,9 +227,11 @@ function addTabEventListeners() {
 
             // Add 'active' to the selected tab content
             document.getElementById(activeMotorTab).classList.add('active');
+            document.getElementById('pre-loader').style.display = 'block';
 
             // Update electrical details for the active motor tab
             fetchAndUpdateMotorDetails(activeMotorTab, motorNumber);
+
         });
     });
 }
@@ -225,7 +244,9 @@ function updateElectricalDetails(motorNumber, details) {
 
         if (element) {
             const valueMap = {
-                'voltage': details.lineVoltage,
+                'r_y_voltage': details.r_y_voltage,
+                'y_b_voltage': details.y_b_voltage,
+                'b_r_voltage': details.b_r_voltage,
                 'current': details.motorCurrent,
                 'kwh': details.energyKwh,
                 'frequency': details.frequency,
@@ -272,8 +293,8 @@ function fetchAndUpdateMotorDetails(motor_id, motor_number) {
         },
         dataType: 'json',
         success: function (data) {
-            // $("#pre-loader").css('display', 'none');
-
+            $("#pre-loader").css('display', 'none');
+            // 
             updateElectricalDetails(motor_number, data);
         },
         error: function (xhr, status, error) {
@@ -601,6 +622,7 @@ function xor_decrypt(encoded, key) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
     mqttReconnect();
 });
 
