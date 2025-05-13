@@ -164,7 +164,7 @@ $devices = isset($_SESSION["DEVICES_LIST"]) ? json_decode($_SESSION["DEVICES_LIS
             background-color: var(--header-bg);
             color: white !important;
             font-weight: 600;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
             letter-spacing: 0.5px;
             font-size: 0.8rem;
             border: 1px solid #ffffff !important;
@@ -174,7 +174,17 @@ $devices = isset($_SESSION["DEVICES_LIST"]) ? json_decode($_SESSION["DEVICES_LIS
         .motor-report-table thead tr:nth-child(2) th {
             background-color: #f8f9fa;
             color: black !important;
-            border: 1px solid #dddddd !important;
+            border: 1px solid #dddddd !important; /* Apply solid border to all cells */
+        }
+        
+        /* Add specific styles for the platform valve columns */
+        /* .platform-valve-header {
+            border-right: 1px solid #dddddd !important;
+        } */
+        
+        /* Ensure bottom border is visible */
+        .motor-report-table thead tr:first-child th {
+            border-bottom: 1px solid #ffffff !important;
         }
     </style>
 </head>
@@ -250,39 +260,29 @@ $devices = isset($_SESSION["DEVICES_LIST"]) ? json_decode($_SESSION["DEVICES_LIS
                                     <tr>
                                         <th class="table-header-row11" style="color:white;">Motor ID</th>
                                         <th class="table-header-row11" style="color:white;">Updated at</th>
-                                        <th class="table-header-row11" style="color:white;">Inlet Pressure</th>
-                                        <th class="table-header-row11" style="color:white;">Outlet Pressure1</th>
-                                        <th class="table-header-row11" style="color:white;">Outlet Pressure2</th>
+                                        <th class="table-header-row11" style="color:white;" colspan="3">Pressure (Kg/cm<sup>2</sup>)</th>
                                         <th class="table-header-row11" style="color:white;">On/Off</th>
-                                        <th class="table-header-row11" style="color:white;">Line Voltage </th>
-                                        <th class="table-header-row11 phase-r">Motor Voltage </th>
-
-                                        <th class="table-header-row11 phase-y">Motor Current </th>
-
+                                        <th class="table-header-row11" style="color:white;" colspan="3">Line Voltage (V)</th>
+                                        <th class="table-header-row11 phase-r">Motor Voltage</th>
+                                        <th class="table-header-row11 phase-y">Motor Current</th>
                                         <th class="table-header-row11 energy-cell">Energy</th>
                                         <th class="table-header-row11" style="color:white;">Flow Rate</th>
-
                                         <th class="table-header-row11" style="color:white;">Speed</th>
                                         <th class="table-header-row11" style="color:white;">Reference Frequency</th>
-
                                         <th class="table-header-row11" style="color:white;">Frequency</th>
-
-                                        <th class="table-header-row11" style="color:white;">Running Hours </th>
-                                        <th class="table-header-row11" style="color:white;">PF 1&2 </th>
-                                        <th class="table-header-row11" style="color:white;">PF 3&4 </th>
-                                        <th class="table-header-row11" style="color:white;">PF 5&6 </th>
-                                        <th class="table-header-row11" style="color:white;">PF 7 </th>
-                                        <th class="table-header-row11" style="color:white;">PF 8 </th>
-                                        <th class="table-header-row11" style="color:white;">PF 9&10 </th>
+                                        <th class="table-header-row11" style="color:white;">Running Hours</th>
+                                        <th class="table-header-row11" style="color:white;" colspan="6">Platform Valve status</th>
                                     </tr>
                                     <tr>
                                         <th></th>
                                         <th></th>
-                                        <th>Kg/cm<sup>2</sup></th>
-                                        <th>Kg/cm<sup>2</sup></th>
-                                        <th>Kg/cm<sup>2</sup></th>
+                                        <th>Inlet</th>
+                                        <th>Outlet 1</th>
+                                        <th>Outlet 2</th>
                                         <th>Status</th>
-                                        <th>(V)</th>
+                                        <th>R_Y</th>
+                                        <th>Y_B</th>
+                                        <th>B_R</th>
                                         <th>(V)</th>
                                         <th>(A)</th>
                                         <th>kWh</th>
@@ -291,17 +291,17 @@ $devices = isset($_SESSION["DEVICES_LIST"]) ? json_decode($_SESSION["DEVICES_LIS
                                         <th>(Hz)</th>
                                         <th>(Hz)</th>
                                         <th>(hrs)</th>
-                                        <th>Status</th>
-                                        <th>Status</th>
-                                        <th>Status</th>
-                                        <th>Status</th>
-                                        <th>Status</th>
-                                        <th>Status</th>
+                                        <th class="platform-valve-header">PF 1&2</th>
+                                        <th class="platform-valve-header">PF 3&4</th>
+                                        <th class="platform-valve-header">PF 5&6</th>
+                                        <th class="platform-valve-header">PF 7</th>
+                                        <th class="platform-valve-header">PF 8</th>
+                                        <th>PF 9&10</th>
                                     </tr>
                                 </thead>
                                 <tbody id="frame_data_table">
                                     <tr>
-                                        <td colspan="21" class="text-center py-4">
+                                        <td colspan="23" class="text-center py-4">
                                             <div class="spinner-border text-primary" role="status">
                                                 <span class="visually-hidden">Loading...</span>
                                             </div>
