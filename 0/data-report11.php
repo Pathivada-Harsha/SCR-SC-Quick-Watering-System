@@ -25,60 +25,104 @@ $devices = isset($_SESSION["DEVICES_LIST"]) ? json_decode($_SESSION["DEVICES_LIS
             --energy: #9b59b6;
         }
 
-        body {
+        /* body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background-color: #f8f9fa;
-        }
+            padding: 20px;
+        } */
 
         .breadcrumb-text {
             color: #6c757d;
             font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            border-radius: 12px;
+            /* background: white; */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-height: 70vh;
+            overflow: auto;
+            position: relative;
         }
 
         .motor-report-table {
-            font-size: 0.9rem;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            font-size: 0.85rem;
+            border-collapse: collapse;
+            border-spacing: 0;
         }
 
-        .table-header-row11 {
-            background-color: var(--header-bg) !important;
+        .motor-report-table th,
+        .motor-report-table td {
+            padding: 0.5rem;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #eaeaea;
+            white-space: nowrap;
+        }
 
+        .motor-report-table thead tr th:first-child {
+            border: 1px solid #ffffff !important;
+        }
+
+        .motor-report-table th {
+            border: 1px solid #ffffff !important;
+            /* Add white borders to all table headers */
+        }
+
+        .table-container thead th {
+            position: sticky;
+            z-index: 10;
+            box-shadow: 0 1px 0 #eaeaea;
+        }
+
+        .table-container thead tr:first-child th {
+            top: 0;
+            background-color: var(--header-bg);
+            z-index: 20;
+        }
+
+        .table-container thead tr:nth-child(2) th {
+            top: 38px;
+            /* background-color: white; */
+            z-index: 15;
+        }
+
+        .border {
+            background-color: var(--header-bg);
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
+            color: white;
         }
 
         .phase-r {
             background-color: var(--phase-r) !important;
             color: white !important;
-            font-weight: 600;
         }
 
         .phase-y {
             background-color: var(--phase-y) !important;
             color: white !important;
-            font-weight: 600;
-        }
-
-        .phase-b {
-            background-color: var(--phase-b) !important;
-            color: white !important;
-            font-weight: 600;
-        }
-
-        .phase-total {
-            background-color: var(--phase-total) !important;
-            color: white !important;
-            font-weight: 600;
         }
 
         .energy-cell {
             background-color: var(--energy) !important;
             color: white !important;
-            font-weight: 600;
+        }
+
+        .phase-r-bg {
+            background-color: rgba(231, 76, 60, 0.1) !important;
+        }
+
+        .phase-y-bg {
+            background-color: rgba(243, 156, 18, 0.1) !important;
+        }
+
+        .energy-bg {
+            background-color: rgba(155, 89, 182, 0.1) !important;
         }
 
         .table-row-even {
@@ -89,30 +133,19 @@ $devices = isset($_SESSION["DEVICES_LIST"]) ? json_decode($_SESSION["DEVICES_LIS
             background-color: rgba(255, 255, 255, 0.5);
         }
 
-        .motor-report-table td,
-        .motor-report-table th {
-            padding: 0.75rem;
-            text-align: center;
-            vertical-align: middle;
-            border-color: #eaeaea;
-        }
-
         .status-badge {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
-            /* spacing between icon and text */
-            padding: 0.35rem 0.85rem;
-            font-size: 0.8rem;
+            gap: 4px;
+            padding: 0.25rem 0.6rem;
+            font-size: 0.75rem;
             font-weight: 600;
             border-radius: 50px;
             color: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            min-width: 80px;
-            /* keeps width consistent for open/close */
+            min-width: 70px;
         }
-
 
         .status-on {
             background: linear-gradient(135deg, #28a745, #20c997);
@@ -122,135 +155,27 @@ $devices = isset($_SESSION["DEVICES_LIST"]) ? json_decode($_SESSION["DEVICES_LIS
             background: linear-gradient(135deg, #dc3545, #e74c3c);
         }
 
-        .form-select,
-        .form-control {
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-            padding: 0.6rem 1rem;
-            box-shadow: none;
-            transition: all 0.3s;
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
         }
 
-        .form-select:focus,
-        .form-control:focus {
-            border-color: #3498db;
-            box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            border: none;
-            border-radius: 8px;
-            padding: 0.6rem 1.5rem;
+        .table-header-row11 {
+            background-color: var(--header-bg);
+            color: white !important;
             font-weight: 600;
-            box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
-            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.8rem;
+            border: 1px solid #ffffff !important;
         }
 
-        /* .btn-primary:hover {
-            background: linear-gradient(135deg, #2980b9, #3498db);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(52, 152, 219, 0.3);
-        } */
-        .table-responsive {
-            overflow: visible;
-        }
-
-        .table-container {
-            border-radius: 12px;
-            background: white;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            max-height: 65vh;
-            /* Control the height of the visible area */
-            overflow: auto;
-            /* Enable scrolling */
-        }
-
-        .phase-r-bg {
-            background-color: rgba(231, 76, 60, 0.1);
-        }
-
-        .phase-y-bg {
-            background-color: rgba(243, 156, 18, 0.1);
-        }
-
-        .phase-b-bg {
-            background-color: rgba(52, 152, 219, 0.1);
-        }
-
-        .phase-total-bg {
-            background-color: rgba(39, 174, 96, 0.1);
-        }
-
-        .energy-bg {
-            background-color: rgba(155, 89, 182, 0.1);
-        }
-
-        @media (max-width: 768px) {
-            .motor-report-table {
-                font-size: 0.8rem;
-            }
-
-            .motor-report-table td,
-            .motor-report-table th {
-                padding: 0.5rem;
-            }
-        }
-
-        .date-column {
-            min-width: 150px;
-            /* Adjust as needed for your date format */
-            white-space: nowrap;
-        }
-
-        /* Alternative solution using relative sizing */
-        .motor-report-table th:nth-child(2),
-        .motor-report-table td:nth-child(2) {
-            width: 150px;
-            min-width: 150px;
-            white-space: nowrap;
-        }
-
-        /* Enhanced sticky header styles */
-        .motor-report-table thead {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        .motor-report-table thead tr:first-child th {
-            position: sticky;
-            top: 0;
-            z-index: 11;
-        }
-
+        /* Fix for second row headers */
         .motor-report-table thead tr:nth-child(2) th {
-            position: sticky;
-            top: 43px;
-            /* Adjusted based on first row height */
-            z-index: 10;
             background-color: #f8f9fa;
-            /* Default background */
+            color: black !important;
+            border: 1px solid #dddddd !important;
         }
-
-        /* For colored headers, we need to maintain their background colors */
-        .motor-report-table thead tr:nth-child(2) th.phase-r-bg {
-            background-color: rgba(231, 76, 60, 0.1);
-        }
-
-        .motor-report-table thead tr:nth-child(2) th.phase-y-bg {
-            background-color: rgba(243, 156, 18, 0.1);
-        }
-
-        .motor-report-table thead tr:nth-child(2) th.phase-b-bg {
-            background-color: rgba(52, 152, 219, 0.1);
-        }
-
-        .motor-report-table thead tr:nth-child(2) th.energy-bg {
-            background-color: rgba(155, 89, 182, 0.1);
-        }
-
-        /* Ensure the table container has proper overflow settings */
     </style>
 </head>
 
@@ -319,85 +244,88 @@ $devices = isset($_SESSION["DEVICES_LIST"]) ? json_decode($_SESSION["DEVICES_LIS
             <div class="row">
                 <div class="col-12">
                     <div class="table-container">
-                        <table class="table table-bordered motor-report-table mb-0">
-                            <thead >
-                                <tr>
-                                    <th class="table-header-row11" style="color:white;">Motor ID</th>
-                                    <th class="table-header-row11 date-column" style="color:white;">Updated at</th>
-                                    <th class="table-header-row11" style="color:white;">On/Off</th>
-                                    <th class="table-header-row11" style="color:white;">Line Voltage </th>
-                                    <th class="table-header-row11 phase-r">Motor Voltage </th>
-
-                                    <th class="table-header-row11 phase-y">Motor Current </th>
-
-                                    <th class="table-header-row11 energy-cell">Energy</th>
-                                    <th class="table-header-row11" style="color:white;">Flow Rate</th>
-
-                                    <th class="table-header-row11" style="color:white;">Speed</th>
-                                    <th class="table-header-row11" style="color:white;">Reference Frequency</th>
-
-                                    <th class="table-header-row11" style="color:white;">Frequency</th>
-
-                                    <th class="table-header-row11" style="color:white;">Running Hours </th>
-                                    <th class="table-header-row11" style="color:white;">PF 1&2 </th>
-                                    <th class="table-header-row11" style="color:white;">PF 3&4 </th>
-                                    <th class="table-header-row11" style="color:white;">PF 5&6 </th>
-                                    <th class="table-header-row11" style="color:white;">PF 7 </th>
-                                    <th class="table-header-row11" style="color:white;">PF 8 </th>
-                                    <th class="table-header-row11" style="color:white;">PF 9&10 </th>
-
-
-
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th>Status</th>
-                                    <th class="phase-r-bg">(V)</th>
-                                    <th class="phase-r-bg">(V)</th>
-                                    <th class="phase-y-bg">(A)</th>
-                                    <th class="energy-bg">kWh</th>
-                                    <th>Liters/Minute (LPM)</th>
-                                    <th>(RPM)</th>
-                                    <th>(Hz)</th>
-                                    <th>(Hz)</th>
-                                    <th>(hrs)</th>
-                                    <th>Status</th>
-                                    <th>Status</th>
-                                    <th>Status</th>
-                                    <th>Status</th>
-                                    <th>Status</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody id="frame_data_table">
-                                <tr>
-                                    <td colspan="21" class="text-center py-4">
-                                        <div class="spinner-border text-primary" role="status">
-                                            <span class="visually-hidden">Loading...</span>
-                                        </div>
-                                        <p class="mt-2 text-muted">Loading motor data...</p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-bordered motor-report-table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th class="table-header-row11" style="color:white;">Motor ID</th>
+                                        <th class="table-header-row11" style="color:white;">Updated at</th>
+                                        <th class="table-header-row11" style="color:white;"colspan="3"> Pressure (Kg/cm<sup>2</sup>)</th>
+                                        <!-- <th class="table-header-row11" style="color:white;">Outlet Pressure1</th>
+                                        <th class="table-header-row11" style="color:white;">Outlet Pressure2</th> -->
+                                        <th class="table-header-row11" style="color:white;">On/Off</th>
+                                        <th class="table-header-row11" style="color:white;"colspan="3">Line Voltage (V)</th>
+                                        <!-- <th class="table-header-row11" style="color:white;">Y_B Voltage </th>
+                                        <th class="table-header-row11" style="color:white;">B_R Voltage </th> -->
+                                        <th class="table-header-row11 phase-r">Motor Voltage </th>
+                                        <th class="table-header-row11 phase-y">Motor Current </th>
+                                        <th class="table-header-row11 energy-cell">Energy</th>
+                                        <th class="table-header-row11" style="color:white;">Flow Rate</th>
+                                        <th class="table-header-row11" style="color:white;">Speed</th>
+                                        <th class="table-header-row11" style="color:white;">Reference Frequency</th>
+                                        <th class="table-header-row11" style="color:white;">Frequency</th>
+                                        <th class="table-header-row11" style="color:white;">Running Hours</th>
+                                        <th class="table-header-row11" style="color:white;"colspan="6">Platform Valve status </th>
+                                        <!-- <th class="table-header-row11" style="color:white;">PF 3&4 </th>
+                                        <th class="table-header-row11" style="color:white;">PF 5&6 </th>
+                                        <th class="table-header-row11" style="color:white;">PF 7 </th>
+                                        <th class="table-header-row11" style="color:white;">PF 8 </th>
+                                        <th class="table-header-row11" style="color:white;">PF 9&10 </th> -->
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th>Inlet</th>
+                                        <th>Outlet 1</th>
+                                        <th>Outlet 2</th>
+                                        <th>Status</th>
+                                        <th>R_Y </th>
+                                        <th>Y_B </th>
+                                        <th>B_R </th>
+                                        <th>(V)</th>
+                                        <th>(A)</th>
+                                        <th>kWh</th>
+                                        <th>Liters/Minute (LPM)</th>
+                                        <th>(RPM)</th>
+                                        <th>(Hz)</th>
+                                        <th>(Hz)</th>
+                                        <th>(hrs)</th>
+                                        <th>PF 1&2</th>
+                                        <th>PF 3&4</th>
+                                        <th>PF 5&6</th>
+                                        <th>PF 7</th>
+                                        <th>PF 8</th>
+                                        <th>PF 9&10</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="frame_data_table">
+                                    <tr>
+                                        <td colspan="21" class="text-center py-4">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                            <p class="mt-2 text-muted">Loading motor data...</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-12 d-flex justify-content-end">
+                <button class="btn btn-secondary btn-sm mt-2" id="btn_add_more" onclick="add_more_records()">+ More Records</button>
+            </div>
         </div>
-        <div class="col-12 d-flex justify-content-end">
-            <button class="btn btn-secondary btn-sm mt-2" id="btn_add_more" onclick="add_more_records()">+ More Records</button>
-        </div>
-    </div>
 
 
-    <script src="<?php echo BASE_PATH; ?>assets/js/sidebar-menu.js"></script>
-    <script src="<?php echo BASE_PATH; ?>assets/js/project/motor_data_report.js"></script>
+        <script src="<?php echo BASE_PATH; ?>assets/js/sidebar-menu.js"></script>
+        <script src="<?php echo BASE_PATH; ?>assets/js/project/motor_data_report.js"></script>
 
-    <?php
-    include(BASE_PATH . "assets/html/body-end.php");
-    include(BASE_PATH . "assets/html/html-end.php");
-    ?>
+        <?php
+        include(BASE_PATH . "assets/html/body-end.php");
+        include(BASE_PATH . "assets/html/html-end.php");
+        ?>
 </body>
 
 </html>

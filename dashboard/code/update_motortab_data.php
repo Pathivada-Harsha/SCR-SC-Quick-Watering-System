@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . mysqli_connect_error());
     }
     // Get electrical details for the specific motor
-    $sql = "SELECT line_voltage, motor_current, energy_kwh, frequency, speed, total_running_hours,motor_voltage, reference_frequency,drive_status,date_time FROM motor_data WHERE motor_id = ? 
+    $sql = "SELECT r_y_voltage,y_b_voltage,b_r_voltage, motor_current, energy_kwh, frequency, speed, total_running_hours,motor_voltage, reference_frequency,drive_status,date_time FROM motor_data WHERE motor_id = ? 
     ORDER BY id DESC LIMIT 1";
 
     $stmt = mysqli_prepare($conn, $sql);
@@ -33,7 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Format response  drive_status
     $response = [
-        'lineVoltage'   => $data['line_voltage'],
+        'r_y_voltage'   => $data['r_y_voltage'],
+        'y_b_voltage'   => $data['y_b_voltage'],
+        'b_r_voltage'   => $data['b_r_voltage'],
         'motorCurrent'  => $data['motor_current'],
         'energyKwh'     => $data['energy_kwh'],
         'frequency'     => $data['frequency'],
@@ -45,9 +47,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     ];
     if ($role === 'SUPERADMIN') {
-        
-            $response['adminStatus'] = $data['drive_status'];
-        
+
+        $response['adminStatus'] = $data['drive_status'];
     }
     // Close connections
     mysqli_stmt_close($stmt);
